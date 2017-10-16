@@ -1,3 +1,5 @@
 #!/usr/bin/env node
 
-console.log('Hello, World!');
+import program from '../index';
+
+program.parse(process.argv);
