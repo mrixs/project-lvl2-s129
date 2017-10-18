@@ -1,6 +1,6 @@
 {
   "name": "mrixs-gen-diff",
-  "version": "0.0.1a",
+  "version": "0.0.1c",
   "description": "Difference generator",
   "devDependencies": {
     "babel-cli": "*",
@@ -10,7 +10,10 @@
     "babel-preset-stage-0": "*",
     "eslint": "*",
     "eslint-config-airbnb-base": "*",
-    "eslint-plugin-import": "*"
+    "eslint-plugin-import": "*",
+    "eslint-plugin-jest": "*",
+    "jest": "^21",
+    "jest-cli": "*"
   },
   "dependencies": {
     "commander": "*"
@@ -19,9 +22,13 @@
     "babel-node": "babel-node",
     "build": "NODE_ENV=production babel src --out-dir dist --source-maps inline",
     "prepublish": "npm run build",
-    "eslint": "eslint src"
+    "eslint": "eslint __tests__ src",
+    "test": "jest"
   },
   "bin": {
     "gendiff": "dist/bin/gendiff.js"
+  },
+  "jest": {
+    "testEnvironment": "node"
   }
 }

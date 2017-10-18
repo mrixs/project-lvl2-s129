@@ -1,7 +1,7 @@
 #GenDiff
 
-[![Maintainability](https://api.codeclimate.com/v1/badges/46c906ed4286169d28df/maintainability)](https://codeclimate.com/github/mrixs/project-lvl2-s129/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/46c906ed4286169d28df/test_coverage)](https://codeclimate.com/github/mrixs/project-lvl2-s129/test_coverage)
+[![Maintainability](https://api.codeclimate.com/v1/badges/9ff537ee0155b359f7bb/maintainability)](https://codeclimate.com/github/mrixs/project-lvl2-s129/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/9ff537ee0155b359f7bb/test_coverage)](https://codeclimate.com/github/mrixs/project-lvl2-s129/test_coverage)
 [![Build Status](https://travis-ci.org/mrixs/project-lvl2-s129.svg?branch=master)](https://travis-ci.org/mrixs/project-lvl2-s129)
 
 Утилита для поиска отличий в конфигурационных файлах.
