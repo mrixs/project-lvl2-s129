@@ -1,6 +1,6 @@
 {
   "name": "mrixs-gen-diff",
-  "version": "0.0.1c",
+  "version": "0.0.2a",
   "description": "Difference generator",
   "devDependencies": {
     "babel-cli": "*",
