@@ -21,3 +21,14 @@ test('Test Plain YAML', () => {
   + verbose: true
 }`);
 });
+
+test('Test Plain INI', () => {
+  expect(gendiff('__tests__/data/before.ini', '__tests__/data/after.ini'))
+    .toBe(`{
+    host: hexlet.io
+  + timeout: 20
+  - timeout: 50
+  - proxy: 123.234.53.22
+  + verbose: true
+}`);
+});
