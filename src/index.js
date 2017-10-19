@@ -1,8 +1,10 @@
 import fs from 'fs';
+import path from 'path';
+import parsers from './parsers';
 
 const fileToString = filename => fs.readFileSync(filename, 'utf8');
-
-const fileToObject = filename => JSON.parse(fileToString(filename));
+const getFileExtension = filename => path.extname(filename).slice(1);
+const fileToObject = filename => parsers[getFileExtension(filename)](fileToString(filename));
 
 export default (file1, file2) => {
   const firstConfig = fileToObject(file1);
