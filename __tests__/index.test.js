@@ -1,7 +1,7 @@
 import gendiff from '../src';
 
 test('Test Plain JSON', () => {
-  expect(gendiff('__tests__/data/before.json', '__tests__/data/after.json'))
+  expect(gendiff('__tests__/__fixtures__/plain/before.json', '__tests__/__fixtures__/plain/after.json'))
     .toBe(`{
     host: hexlet.io
   + timeout: 20
@@ -12,7 +12,7 @@ test('Test Plain JSON', () => {
 });
 
 test('Test Plain YAML', () => {
-  expect(gendiff('__tests__/data/before.yaml', '__tests__/data/after.yml'))
+  expect(gendiff('__tests__/__fixtures__/plain/before.yaml', '__tests__/__fixtures__/plain/after.yml'))
     .toBe(`{
     host: hexlet.io
   + timeout: 20
@@ -23,7 +23,7 @@ test('Test Plain YAML', () => {
 });
 
 test('Test Plain INI', () => {
-  expect(gendiff('__tests__/data/before.ini', '__tests__/data/after.ini'))
+  expect(gendiff('__tests__/__fixtures__/plain/before.ini', '__tests__/__fixtures__/plain/after.ini'))
     .toBe(`{
     host: hexlet.io
   + timeout: 20

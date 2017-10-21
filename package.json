@@ -1,6 +1,6 @@
 {
   "name": "mrixs-gen-diff",
-  "version": "0.0.4a",
+  "version": "0.0.4b",
   "description": "Difference generator",
   "devDependencies": {
     "babel-cli": "*",
@@ -18,7 +18,8 @@
   "dependencies": {
     "commander": "*",
     "js-yaml": "*",
-    "ini": "*"
+    "ini": "*",
+    "lodash": "*"
   },
   "scripts": {
     "babel-node": "babel-node",
